@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 2s linear;
   height: 40vmin;
   pointer-events: none;
 }
@@ -23,11 +23,28 @@
   color: #61dafb;
 }
 
+.logoRotate
+{
+  animation: logo2 infinite 2s linear;
+  height: 40vmin;
+  pointer-events: none;
+
+}
+
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotateY(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
+  }
+}
+/* :::::: */
+@keyframes logo2 {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
   }
 }
